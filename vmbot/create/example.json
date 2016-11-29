@@ -1,0 +1,22 @@
+{
+  "variables": {
+    "aws_access_key": "AKIAIDJELF2J63NWW4HA",
+    "aws_secret_key": "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"
+  },
+  "builders": [{
+    "type": "amazon-ebs",
+    "access_key": "{{user `aws_access_key`}}",
+    "secret_key": "{{user `aws_secret_key`}}",
+    "region": "us-east-1",
+    "source_ami": "{{user `ami-id`}}",
+    "instance_type": "t2.micro",
+    "ssh_username": "ubuntu",
+    "ami_name": "packer-example {{timestamp}}"
+  }],
+  "provisioners": [
+    {
+      "type": "ansible",
+      "playbook_file": "./packer.yml"
+    }
+  ]
+}

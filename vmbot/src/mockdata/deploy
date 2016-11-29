@@ -1,0 +1,41 @@
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'precise32' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Box file was not detected as metadata. Adding it directly...
+==> default: Adding box 'precise32' (v0) for provider: virtualbox
+    default: Downloading: http://files.vagrantup.com/precise32.box
+[K    default: Progress: 0% (Rate: 0/s, Estimated time remaining: --:--:--)[K    default: Progress: 0% (Rate: 558k/s, Estimated time remaining: 0:08:35)[K    default: Progress: 1% (Rate: 3200k/s, Estimated time remaining: 0:02:14)[K    default: Progress: 3% (Rate: 4502k/s, Estimated time remaining: 0:01:20)[K    default: Progress: 3% (Rate: 3550k/s, Estimated time remaining: 0:01:33)[K    default: Progress: 5% (Rate: 4028k/s, Estimated time remaining: 0:01:17)[K    default: Progress: 7% (Rate: 4448k/s, Estimated time remaining: 0:01:07)[K    default: Progress: 10% (Rate: 5119k/s, Estimated time remaining: 0:01:00)[K    default: Progress: 12% (Rate: 5141k/s, Estimated time remaining: 0:00:56)[K    default: Progress: 14% (Rate: 6101k/s, Estimated time remaining: 0:00:52)[K    default: Progress: 16% (Rate: 6209k/s, Estimated time remaining: 0:00:49)[K    default: Progress: 18% (Rate: 6341k/s, Estimated time remaining: 0:00:46)[K    default: Progress: 20% (Rate: 6122k/s, Estimated time remaining: 0:00:45)[K    default: Progress: 22% (Rate: 6216k/s, Estimated time remaining: 0:00:43)[K    default: Progress: 25% (Rate: 6350k/s, Estimated time remaining: 0:00:40)[K    default: Progress: 27% (Rate: 6636k/s, Estimated time remaining: 0:00:38)[K    default: Progress: 30% (Rate: 6518k/s, Estimated time remaining: 0:00:37)[K    default: Progress: 32% (Rate: 6884k/s, Estimated time remaining: 0:00:35)[K    default: Progress: 34% (Rate: 6826k/s, Estimated time remaining: 0:00:33)[K    default: Progress: 36% (Rate: 6534k/s, Estimated time remaining: 0:00:32)[K    default: Progress: 38% (Rate: 6304k/s, Estimated time remaining: 0:00:31)[K    default: Progress: 41% (Rate: 6294k/s, Estimated time remaining: 0:00:30)[K    default: Progress: 43% (Rate: 6004k/s, Estimated time remaining: 0:00:29)[K    default: Progress: 44% (Rate: 5849k/s, Estimated time remaining: 0:00:28)[K    default: Progress: 47% (Rate: 5933k/s, Estimated time remaining: 0:00:27)[K    default: Progress: 49% (Rate: 5810k/s, Estimated time remaining: 0:00:26)[K    default: Progress: 51% (Rate: 6092k/s, Estimated time remaining: 0:00:24)[K    default: Progress: 53% (Rate: 5733k/s, Estimated time remaining: 0:00:24)[K    default: Progress: 55% (Rate: 6056k/s, Estimated time remaining: 0:00:22)[K    default: Progress: 57% (Rate: 6203k/s, Estimated time remaining: 0:00:21)[K    default: Progress: 59% (Rate: 6144k/s, Estimated time remaining: 0:00:20)[K    default: Progress: 61% (Rate: 5751k/s, Estimated time remaining: 0:00:19)[K    default: Progress: 63% (Rate: 5894k/s, Estimated time remaining: 0:00:19)[K    default: Progress: 65% (Rate: 6010k/s, Estimated time remaining: 0:00:17)[K    default: Progress: 68% (Rate: 5921k/s, Estimated time remaining: 0:00:16)[K    default: Progress: 70% (Rate: 6312k/s, Estimated time remaining: 0:00:15)[K    default: Progress: 73% (Rate: 7075k/s, Estimated time remaining: 0:00:13)[K    default: Progress: 76% (Rate: 7814k/s, Estimated time remaining: 0:00:11)[K    default: Progress: 79% (Rate: 7625k/s, Estimated time remaining: 0:00:10)[K    default: Progress: 80% (Rate: 7408k/s, Estimated time remaining: 0:00:09)[K    default: Progress: 82% (Rate: 7085k/s, Estimated time remaining: 0:00:08)[K    default: Progress: 85% (Rate: 6465k/s, Estimated time remaining: 0:00:07)[K    default: Progress: 87% (Rate: 6096k/s, Estimated time remaining: 0:00:06)[K    default: Progress: 89% (Rate: 6106k/s, Estimated time remaining: 0:00:05)[K    default: Progress: 91% (Rate: 6284k/s, Estimated time remaining: 0:00:04)[K    default: Progress: 94% (Rate: 6445k/s, Estimated time remaining: 0:00:03)[K    default: Progress: 96% (Rate: 6430k/s, Estimated time remaining: 0:00:02)[K    default: Progress: 98% (Rate: 6533k/s, Estimated time remaining: 0:00:01)[K==> default: Successfully added box 'precise32' (v0) for 'virtualbox'!
+==> default: Importing base box 'precise32'...
+[KProgress: 30%[KProgress: 40%[KProgress: 50%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+==> default: Setting the name of the VM: vmbot_default_1476993421040_36253
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: 
+    default: Vagrant insecure key detected. Vagrant will automatically replace
+    default: this with a newly generated keypair for better security.
+    default: 
+    default: Inserting generated public key within guest...
+    default: Removing insecure key from the guest if it's present...
+    default: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default: 
+    default: Guest Additions Version: 4.2.0
+    default: VirtualBox Version: 5.1
+==> default: Mounting shared folders...
+    default: /vagrant => /Users/rkrsn/git/csc510/timely-trampoline/vmbot

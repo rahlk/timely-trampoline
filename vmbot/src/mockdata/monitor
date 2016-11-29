@@ -1,0 +1,2 @@
+31030 ttys001    0:00.08 python -B
+31038 ttys002    0:00.01 grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn python
