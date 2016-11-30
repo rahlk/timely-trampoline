@@ -17,9 +17,9 @@ base_boxes = {
     "trusty64": "https://hashicorp-files.hashicorp.com/trusty64.box"}
 
 ami_keys = {"trusty32": "ami-fce3c696",
-            "trusty64": "ami-c8580bdf",
-            "precise32": "ami-00856e6d",
-            "precise64": "ami-0011546a"}
+            "trusty64": "ami-fce3c696",
+            "precise32": "ami-fce3c696",
+            "precise64": "ami-fce3c696"}
 
 communication_cache = []
 
