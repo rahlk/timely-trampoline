@@ -1,6 +1,6 @@
 from __future__ import print_function
 import subprocess
-import urllib
+# import urllib
 import os
 import sys
 from pdb import set_trace
