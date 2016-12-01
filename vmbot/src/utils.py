@@ -1,7 +1,7 @@
 from __future__ import print_function
-import subprocess
-# import urllib
+
 import os
+import subprocess
 import sys
 from pdb import set_trace
 
@@ -13,7 +13,7 @@ if root not in sys.path:
 
 
 def create_instance(ami_key, playbook):
-    # set_trace()
+    set_trace()
     cmd = [os.path.join(root, "bin", "createbox.sh"), ami_key, playbook]
     try:
         return subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)

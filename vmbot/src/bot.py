@@ -39,22 +39,6 @@ def help(message):
     pass
 
 
-@listen_to('create box precise32 with pip install selenium, mkdir myproject', re.IGNORECASE)
-@respond_to('create box precise32 with pip install selenium, mkdir myproject', re.IGNORECASE)
-def create_box(message):
-    create_config = {
-        'box_name': 'precise32',
-        'box_url': 'http://files.vagrantup.com/precise32.box'
-    }
-
-    if mock_create(create_config) == 'SUCCESS':
-        message.reply('A vagrant box for ubuntu-precise32 has been created. '
-                      'Installed python. Installed selenium. Directory myproject created. '
-                      '\n\n Box now ready to be deployed.')
-    else:
-        message.reply('Failed to create precise32. A box with this name has already been created.')
-
-
 @listen_to('Create (.*)', re.IGNORECASE)
 @respond_to('Create (.*)', re.IGNORECASE)
 def create_box(message, something):
@@ -78,6 +62,7 @@ def create_box(message, something):
             if len(created_ami) > 0:
                 message.reply("==> Builds finished. The artifacts of successful builds are:")
                 message.reply("--> amazon-ebs: AMIs were created:")
+                set_trace()
                 message.reply(created_ami)
             else:
                 for content in stdout: message.reply(content)
