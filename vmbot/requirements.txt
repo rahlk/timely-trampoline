@@ -1,5 +1,4 @@
 slackbot
 python-vagrant
-logging
 validators
 awscli

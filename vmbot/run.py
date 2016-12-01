@@ -1,3 +1,4 @@
+#! python -B
 from slackbot.bot import Bot
 import logging
 logging.basicConfig()

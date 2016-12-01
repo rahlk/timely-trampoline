@@ -1,7 +1,7 @@
 {
   "variables": {
-    "aws_access_key": "AKIAIDJELF2J63NWW4HA",
-    "aws_secret_key": "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"
+    "aws_access_key": "",
+    "aws_secret_key": ""
   },
   "builders": [{
     "type": "amazon-ebs",
@@ -16,7 +16,7 @@
   "provisioners": [
     {
       "type": "ansible",
-      "playbook_file": "/Users/rkrsn/git/csc510/timely-trampoline/vmbot/src/bin/packer.yml"
+      "playbook_file": "./src/bin/packer.yml"
     }
   ]
 }
