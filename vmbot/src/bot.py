@@ -54,7 +54,7 @@ def create_box(message, something):
         elif len(urls) == 0:
             message.reply("I expected 1 url. Got no url.")
         else:
-            m = create_instance(ami_keys[ami], playbook=urls[0][:-1])  # Refactor this
+            m = create_instance(ami_keys[ami], playbook=urls[0])  # Refactor this
             message.reply("Creating AMI using the playbook file.\nThis may take a while. Please wait...\n")
             stdout = m.communicate()
             created_ami = stdout[0].split('\n')[-2].split(": ")[-1]
@@ -62,7 +62,6 @@ def create_box(message, something):
             if len(created_ami) > 0:
                 message.reply("==> Builds finished. The artifacts of successful builds are:")
                 message.reply("--> amazon-ebs: AMIs were created:")
-                set_trace()
                 message.reply(created_ami)
             else:
                 for content in stdout: message.reply(content)

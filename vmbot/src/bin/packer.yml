@@ -1,0 +1,9 @@
+---
+- hosts: all
+  sudo: true
+  gather_facts: true
+  tasks:
+    - name: Update apt-cache
+      apt: update_cache=true
+    - name: Install apache2
+      apt: name=apache2 update_cache=yes state=latest

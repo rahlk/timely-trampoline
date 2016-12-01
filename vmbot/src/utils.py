@@ -13,7 +13,6 @@ if root not in sys.path:
 
 
 def create_instance(ami_key, playbook):
-    set_trace()
     cmd = [os.path.join(root, "bin", "createbox.sh"), ami_key, playbook]
     try:
         return subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
