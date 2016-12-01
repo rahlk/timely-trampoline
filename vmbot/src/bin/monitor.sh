@@ -1,3 +1,3 @@
-#! /bin/bash 
+#! /bin/bash
 
-ssh -i ~/.ssh/ncj.pem ubuntu@$1 $2
+ssh -i ~/.ssh/MyKeyPair.pem -o StrictHostKeyChecking=no ubuntu@$1 $2
