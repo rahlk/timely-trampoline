@@ -2,3 +2,6 @@ slackbot
 python-vagrant
 validators
 awscli
+pyopenssl
+ndg-httpsclient
+pyasn1
